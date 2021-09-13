@@ -16,7 +16,9 @@ public class Game {
         System.out.println("Программа загадала число от 0 до 9. У вас 5 попыток. Отгадайте число.");
         // System.out.println(number);  //Сразу вывести загаданное число
 
-        for (int i = 0; i < 5; i++) {     
+//        for (int i = 0; i < 5; i++) { 
+        int i = 0;
+        while(true){
             int userNumber = scanner.nextInt();
             
             if(userNumber == number){
@@ -29,10 +31,10 @@ public class Game {
             }else{
                 System.out.println("Неверно. Попробуйте число побольше.");
             }
+            i++;
         }
         if (!win) {
             System.out.println("Вы проиграли. Загаданное число = " + number);
         }
     }
-    
 }
