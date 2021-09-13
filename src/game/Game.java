@@ -18,7 +18,7 @@ public class Game {
 
 //        for (int i = 0; i < 5; i++) { 
         int i = 0;
-        while(true){
+        do{
             int userNumber = scanner.nextInt();
             
             if(userNumber == number){
@@ -35,7 +35,7 @@ public class Game {
                 break;
             }
             i++;
-        }
+        }while(true);
         if (!win) {
             System.out.println("Вы проиграли. Загаданное число = " + number);
         }
