@@ -13,10 +13,10 @@ public class Game {
 
         int number = random.nextInt(10);
 
-        System.out.println("Программа загадала число от 0 до 9. У вас 10 попыток. Отгадайте число.");
+        System.out.println("Программа загадала число от 0 до 9. У вас 5 попыток. Отгадайте число.");
         // System.out.println(number);  //Сразу вывести загаданное число
 
-        for (int i = 0; i < 10; i++) {     
+        for (int i = 0; i < 5; i++) {     
             int userNumber = scanner.nextInt();
             
             if(userNumber == number){
