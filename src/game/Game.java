@@ -31,6 +31,9 @@ public class Game {
             }else{
                 System.out.println("Неверно. Попробуйте число побольше.");
             }
+            if(i==4){
+                break;
+            }
             i++;
         }
         if (!win) {
