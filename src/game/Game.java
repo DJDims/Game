@@ -21,11 +21,13 @@ public class Game {
             
             if(userNumber == number){
                 System.out.println("Поздравляю. Вы победили!");
-                System.out.println("Вы отгадали число с " + ++i + " попытки");
+                System.out.println("Вы отгадали число с " + ++i + " попытки.");
                 win = true;
                 break;
+            }else if (userNumber > number) {
+                System.out.println("Неверно. Попробуйте число поменьше.");
             }else{
-                System.out.println("Неверно. Попробуйте еще раз.");
+                System.out.println("Неверно. Попробуйте число побольше.");
             }
         }
         if (!win) {
